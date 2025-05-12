@@ -5,89 +5,22 @@
   <title>Sunny Tourism Reception</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    /* Reset */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background: #f9f9f9;
-    }
-
-    header {
-      background: #2a9d8f;
-      color: #fff;
-      padding: 1rem;
-    }
-    header h1 {
-      font-size: 1.8rem;
-      text-align: center;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      margin-top: 0.5rem;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    main {
-      max-width: 960px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background: #fff;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    section { margin-bottom: 2rem; }
-
-    section h2 {
-      border-bottom: 3px solid #2a9d8f;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #2a9d8f;
-    }
-
-    /* Fee table */
-    .fee-table {
-      width: 100%;
-      overflow-x: auto;
-    }
-    .fee-table table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 600px;
-    }
-    .fee-table th,
-    .fee-table td {
-      padding: 0.75rem;
-      border: 1px solid #ddd;
-      text-align: left;
-    }
-    .fee-table th {
-      background: #e9f5f2;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #2a9d8f;
-      color: #fff;
-      font-size: 0.9rem;
-    }
-
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; padding: 1rem; }
+    header { background: #2a9d8f; color: #fff; padding: 1rem; text-align: center; }
+    h1 { font-size: 2rem; }
+    section { max-width: 800px; margin: 1.5rem auto; background: #fff; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h2 { margin-top: 1rem; font-size: 1.5rem; color: #2a9d8f; }
+    p { margin: 0.75rem 0; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.75rem; text-align: left; }
+    th { background: #2a9d8f; color: #fff; }
+    tfoot td { border: none; text-align: center; padding-top: 1rem; }
+    a { color: #2a9d8f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { text-align: center; font-size: 0.9rem; margin-top: 2rem; color: #666; }
     @media (max-width: 600px) {
-      header h1 { font-size: 1.4rem; }
-      nav { flex-direction: column; }
+      table, th, td { font-size: 0.9rem; }
     }
   </style>
 </head>
@@ -95,116 +28,88 @@
 
   <header>
     <h1>Sunny Tourism Reception</h1>
-    <nav>
-      <a href="#about">About Us</a>
-      <a href="#fees">Fees</a>
-      <a href="#terms">Terms</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Your gateway to unforgettable Southeast Asia travels!</p>
   </header>
 
-  <main>
-    <!-- About -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>
-        We are a professional team specialized in tourism reception services across Southeast Asia,
-        including airport pick-up, hotel reservation, itinerary planning, and personalized tours.
-        Come explore Southeast Asia with us for an unforgettable experience at every destination!
-      </p>
-    </section>
+  <section>
+    <h2>About Us</h2>
+    <p>We specialize in tailor-made travel services across Southeast Asia, including airport pickups, hotel reservations, itinerary planning, and personalized tours. Our dedicated team ensures you experience each destination in a unique and memorable way.</p>
+  </section>
 
-    <!-- Fees -->
-    <section id="fees">
-      <h2>Service Fees (USD)</h2>
-      <div class="fee-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Service Item</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Tourism Consultation</td>
-              <td>Optimize travel routes, hotel accommodation, precautions</td>
-              <td>$50</td>
-            </tr>
-            <tr>
-              <td>Airport Transfer</td>
-              <td>Airport → Hotel, per vehicle fee</td>
-              <td>$60</td>
-            </tr>
-            <tr>
-              <td>Hotel Reservation</td>
-              <td>Three-star or above hotel, double room, per night</td>
-              <td>$75</td>
-            </tr>
-            <tr>
-              <td>Scenic Tour Guide</td>
-              <td>Daily guide service (groups >10 people additional fee)</td>
-              <td>$80</td>
-            </tr>
-            <tr>
-              <td>Tourist Car</td>
-              <td>Daily vehicle fee (fuel, parking, driver wages)</td>
-              <td>$90</td>
-            </tr>
-            <tr>
-              <td>Meals During Tour</td>
-              <td>Lunch & dinner, per person per meal</td>
-              <td>$15</td>
-            </tr>
-            <tr>
-              <td>Attraction Tickets</td>
-              <td>Based on actual attraction prices</td>
-              <td>Varies</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+  <section>
+    <h2>Service Pricing</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Service Item</th>
+          <th>Description</th>
+          <th>Pricing (USD)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Travel Consultation</td>
+          <td>Optimize travel routes, hotel accommodation, and itinerary planning.</td>
+          <td>$50 per session</td>
+        </tr>
+        <tr>
+          <td>Hotel & Flight Booking</td>
+          <td>Arrange flights and hotels with special discounts for group bookings.</td>
+          <td>$60–$120 (depending on destination)</td>
+        </tr>
+        <tr>
+          <td>Hotel & Entertainment</td>
+          <td>Three-star hotel, full meals, sightseeing tickets (prices may vary).</td>
+          <td>$70–$150</td>
+        </tr>
+        <tr>
+          <td>Scenic Tickets</td>
+          <td>Daily entrance tickets to attractions (special offers available).</td>
+          <td>$25–$30 per day</td>
+        </tr>
+        <tr>
+          <td>Transportation</td>
+          <td>Car rental including fuel, driver fees, and parking fees.</td>
+          <td>$80–$120 per day</td>
+        </tr>
+        <tr>
+          <td>Custom Tour Package</td>
+          <td>Customized travel packages based on client requirements.</td>
+          <td>Contact for Quote</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">For more details, please contact us at <a href="mailto:lau240708@outlook.com">lau240708@outlook.com</a> or Telegram: <a href="https://t.me/helloyawu">@helloyawu</a>.</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
 
-    <!-- Terms -->
-    <section id="terms">
-      <h2>Terms & Policies</h2>
+  <section>
+    <h2>Privacy Policy</h2>
+    <p>We respect your privacy. Any personal data collected (e.g., name, contact info) is used solely to provide our services, improve your experience, and communicate with you. We do not share your information with third parties without your consent, except where required by law.</p>
+  </section>
 
-      <h3>1. Cancellation & Refund Policy</h3>
-      <ul>
-        <li>Cancellations made ≥7 days before service: full refund minus 5% processing fee.</li>
-        <li>Cancellations 3–6 days before: 50% refund.</li>
-        <li>Less than 3 days or no-show: no refund.</li>
-      </ul>
+  <section>
+    <h2>Refund & Cancellation Policy</h2>
+    <p>
+      <strong>Cancellation by Client:</strong> Full refund if canceled 7 days before start date; 50% refund if canceled 3–6 days before; no refund if within 48 hours.<br>
+      <strong>Service Changes:</strong> We strive to accommodate changes but cannot guarantee availability. Additional fees may apply.<br>
+      <strong>Force Majeure:</strong> No refunds for delays or cancellations due to unforeseeable events (e.g., natural disasters, government actions), but we will assist with rescheduling.
+    </p>
+  </section>
 
-      <h3>2. Privacy Policy</h3>
-      <p>
-        We collect only necessary personal information (name, contact, booking details) to provide our services.
-        Your data is stored securely and never shared with third parties without consent.
-      </p>
-
-      <h3>3. Terms of Use</h3>
-      <p>
-        By booking with Sunny Tourism, you agree to comply with local laws and regulations.
-        We reserve the right to adjust itinerary due to weather or force majeure, with advance notice.
-      </p>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        Telegram: <a href="https://t.me/helloyawu" target="_blank">@helloyawu</a><br>
-        Email: <a href="mailto:lau240708@outlook.com">lau240708@outlook.com</a>
-      </p>
-    </section>
-  </main>
+  <section>
+    <h2>Terms of Use</h2>
+    <p>
+      By using our services, you agree to provide accurate information, follow local laws, and accept associated risks. We are not liable for personal injury, loss, or damage resulting from activities. Please read full terms <a href="#">here</a> (link to detailed TOS).
+    </p>
+  </section>
 
   <footer>
     &copy; 2025 Sunny Tourism. All rights reserved.
   </footer>
 
 </body>
-</html>
 </html>
