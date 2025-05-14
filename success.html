@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Payment Successful – Sunny Tourism</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <title>Payment Success – Sunny Tourism</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header>
-    <img src="/assets/img/logo.png" alt="Sunny Tourism Logo" class="logo">
+    <img src="assets/img/logo.png" alt="Sunny Tourism Logo" class="logo">
+    <span class="site-title">Sunny Tourism</span>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -20,17 +21,23 @@
 
   <main>
     <h1>Payment Successful!</h1>
-    <p>Your order ID is: <strong id="order-id"></strong></p>
+    <p>Your order number is: <strong id="order-id"></strong></p>
     <script>
-      // 从 URL 参数里读取 orderid 并显示
+      // 从 URL 查询参数读取 m_orderid
       const params = new URLSearchParams(location.search);
-      document.getElementById('order-id').innerText = params.get('orderid') || 'N/A';
+      document.getElementById('order-id').textContent = params.get('orderid') || '—';
     </script>
-    <a href="index.html" class="button-link">Back to Home</a>
   </main>
 
   <footer>
-    <nav>…</nav>
+    <nav>
+      <a href="index.html">Home</a>|
+      <a href="about.html">About Us</a>|
+      <a href="services.html">Services</a>|
+      <a href="terms.html">Terms</a>|
+      <a href="privacy.html">Privacy Policy</a>|
+      <a href="contact.html">Contact</a>
+    </nav>
     <p>© 2025 Sunny Tourism. All rights reserved.</p>
   </footer>
 </body>
