@@ -1,3 +1,8 @@
+/* —— Logo 大小控制 —— */
+.logo {
+  height: 60px; /* 改成你想要的高度 */
+}
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
