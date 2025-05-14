@@ -2,19 +2,18 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>支付成功</title>
-  <style>
-    body { font-family: sans-serif; text-align: center; padding: 2em; }
-    h1 { color: green; }
-  </style>
+  <title>支付成功 – Sunny Tourism</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <h1>支付成功！🎉</h1>
-  <p>您的订单号是：<strong id="oid"></strong></p>
+  <main>
+    <h1>🎉 支付成功！</h1>
+    <p>您的订单号是：<strong id="order-id"></strong></p>
+  </main>
   <script>
-    // 从 URL 参数里读取 orderid 并显示
+    // 从 URL 参数读取 orderid
     const params = new URLSearchParams(location.search);
-    document.getElementById('oid').innerText = params.get('orderid') || '未知';
+    document.getElementById('order-id').textContent = params.get('orderid') || '未知';
   </script>
 </body>
 </html>
