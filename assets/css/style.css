@@ -1,112 +1,89 @@
-/* — 全局页面背景 — */
+/* — Global background for all pages — */
 body {
+  background: url('../img/bg.jpg') center/cover fixed no-repeat;
   margin: 0;
   min-height: 100vh;
-  background: url('../img/bg.png') center/cover fixed no-repeat;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
-/* — Logo 大小控制 — */
+/* — Logo size and site title — */
 .logo {
-  height: 60px; /* 根据需要调整 Logo 显示高度 */
+  height: 60px; /* 可根据需要调整 */
+  vertical-align: middle;
+}
+.site-title {
+  margin-left: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #005fa3;
+  vertical-align: middle;
 }
 
-/* — 全局重置 — */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* — Header & nav — */
+header {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header nav {
+  margin-left: auto;
+}
+header nav a {
+  margin: 0 0.75rem;
+  color: #005fa3;
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav a:hover {
+  text-decoration: underline;
 }
 
-/* — 全局链接、按钮等基础样式 — */
-a {
+/* — Main content — */
+main {
+  flex: 1;
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* — Buttons — */
+.button-link {
+  display: inline-block;
+  background: #005fa3;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+.button-link:hover {
+  background: #004680;
+}
+
+/* — Footer — */
+footer {
+  background: rgba(255,255,255,0.85);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+footer nav a {
+  margin: 0 0.5rem;
   color: #005fa3;
   text-decoration: none;
 }
-a:hover {
+footer nav a:hover {
   text-decoration: underline;
-}
-button,
-.button-link {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background: #00796b;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-button:hover,
-.button-link:hover {
-  background: #005fa3;
-}
-
-/* — 区块间距 — */
-section {
-  margin-bottom: 2rem;
-}
-
-/* — 表单样式 — */
-form {
-  display: grid;
-  gap: 0.5rem;
-  max-width: 500px;
-  margin: 1rem 0;
-}
-input,
-textarea {
-  width: 100%;
-  padding: 0.6rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-textarea {
-  height: 120px;
-  resize: vertical;
-}
-
-/* — 容器与排版 — */
-header,
-footer {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 1rem;
-}
-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-nav a {
-  margin-right: 1rem;
-  font-weight: bold;
-}
-main {
-  flex: 1;
-  padding: 2rem;
-}
-footer {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* — 表格样式 — */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-}
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 0.75rem;
-  text-align: left;
-}
-th {
-  background: #00796b;
-  color: #fff;
 }
