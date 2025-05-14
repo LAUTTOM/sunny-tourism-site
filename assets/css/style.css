@@ -2,3 +2,145 @@
 .logo {
   height: 60px; /* 改成你想要的高度 */
 }
+
+/* —— 全局重置 —— */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #f4f7f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* —— 头部导航 —— */
+header {
+  background: #00897b;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+header .logo {
+  margin-right: 1rem;
+}
+header nav {
+  display: flex;
+  gap: 1rem;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* —— 主内容区 —— */
+main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+main h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #00897b;
+}
+main p {
+  margin-bottom: 1.5rem;
+}
+
+/* —— 按钮链接 —— */
+.button-link {
+  display: inline-block;
+  background: #00897b;
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.button-link:hover {
+  background: #00695c;
+}
+
+/* —— 表格样式 —— */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+th {
+  background: #00897b;
+  color: #fff;
+}
+
+/* —— 表单样式 —— */
+form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+form label {
+  font-weight: 500;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+form textarea {
+  height: 120px;
+  resize: vertical;
+}
+form button {
+  width: fit-content;
+  padding: 0.6rem 1.2rem;
+  background: #00897b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+form button:hover {
+  background: #00695c;
+}
+
+/* —— 页脚 —— */
+footer {
+  background: #263238;
+  color: #bbb;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+footer nav {
+  margin-bottom: 0.5rem;
+}
+footer nav a {
+  color: #bbb;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+footer nav a:hover {
+  text-decoration: underline;
+}
