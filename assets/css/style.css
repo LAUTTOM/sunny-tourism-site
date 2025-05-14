@@ -1,146 +1,112 @@
-/* —— Logo 大小控制 —— */
-.logo {
-  height: 60px; /* 改成你想要的高度 */
+/* — 全局页面背景 — */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: url('../img/bg.png') center/cover fixed no-repeat;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-/* —— 全局重置 —— */
+/* — Logo 大小控制 — */
+.logo {
+  height: 60px; /* 根据需要调整 Logo 显示高度 */
+}
+
+/* — 全局重置 — */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: system-ui, sans-serif;
-  line-height: 1.6;
-  background: #f4f7f9;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
-/* —— 头部导航 —— */
-header {
-  background: #00897b;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-}
-header .logo {
-  margin-right: 1rem;
-}
-header nav {
-  display: flex;
-  gap: 1rem;
-}
-header nav a {
-  color: #fff;
+/* — 全局链接、按钮等基础样式 — */
+a {
+  color: #005fa3;
   text-decoration: none;
-  font-weight: 500;
 }
-header nav a:hover {
+a:hover {
   text-decoration: underline;
 }
-
-/* —— 主内容区 —— */
-main {
-  flex: 1;
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-main h1 {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #00897b;
-}
-main p {
-  margin-bottom: 1.5rem;
-}
-
-/* —— 按钮链接 —— */
+button,
 .button-link {
   display: inline-block;
-  background: #00897b;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: background 0.3s;
-}
-.button-link:hover {
-  background: #00695c;
-}
-
-/* —— 表格样式 —— */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 2rem;
-}
-th, td {
-  border: 1px solid #ddd;
-  padding: 0.75rem;
-  text-align: left;
-}
-th {
-  background: #00897b;
-  color: #fff;
-}
-
-/* —— 表单样式 —— */
-form {
-  display: grid;
-  gap: 0.8rem;
-  max-width: 500px;
-  margin: 1rem auto;
-}
-form label {
-  font-weight: 500;
-}
-form input,
-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1rem;
-}
-form textarea {
-  height: 120px;
-  resize: vertical;
-}
-form button {
-  width: fit-content;
-  padding: 0.6rem 1.2rem;
-  background: #00897b;
+  padding: 0.75rem 1.5rem;
+  background: #00796b;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background 0.3s;
 }
-form button:hover {
-  background: #00695c;
+button:hover,
+.button-link:hover {
+  background: #005fa3;
 }
 
-/* —— 页脚 —— */
+/* — 区块间距 — */
+section {
+  margin-bottom: 2rem;
+}
+
+/* — 表单样式 — */
+form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: 1rem 0;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* — 容器与排版 — */
+header,
 footer {
-  background: #263238;
-  color: #bbb;
-  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+}
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+nav a {
+  margin-right: 1rem;
+  font-weight: bold;
+}
+main {
+  flex: 1;
+  padding: 2rem;
+}
+footer {
   text-align: center;
-}
-footer nav {
-  margin-bottom: 0.5rem;
-}
-footer nav a {
-  color: #bbb;
-  margin: 0 0.5rem;
-  text-decoration: none;
   font-size: 0.9rem;
+  color: #666;
 }
-footer nav a:hover {
-  text-decoration: underline;
+
+/* — 表格样式 — */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+th {
+  background: #00796b;
+  color: #fff;
 }
