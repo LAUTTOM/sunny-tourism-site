@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>支付成功 – Sunny Tourism</title>
+  <title>Payment Successful – Sunny Tourism</title>
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
+  <header>
+    <img src="/assets/img/logo.png" alt="Sunny Tourism Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>🎉 支付成功！</h1>
-    <p>您的订单号是：<strong id="order-id"></strong></p>
+    <h1>Payment Successful!</h1>
+    <p>Your order ID is: <strong id="order-id"></strong></p>
+    <script>
+      // 从 URL 参数里读取 orderid 并显示
+      const params = new URLSearchParams(location.search);
+      document.getElementById('order-id').innerText = params.get('orderid') || 'N/A';
+    </script>
+    <a href="index.html" class="button-link">Back to Home</a>
   </main>
-  <script>
-    // 从 URL 参数读取 orderid
-    const params = new URLSearchParams(location.search);
-    document.getElementById('order-id').textContent = params.get('orderid') || '未知';
-  </script>
+
+  <footer>
+    <nav>…</nav>
+    <p>© 2025 Sunny Tourism. All rights reserved.</p>
+  </footer>
 </body>
 </html>
