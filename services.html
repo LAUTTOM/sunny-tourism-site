@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Services & Pricing – Sunny Tourism</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Sunny Tourism</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <img src="assets/img/logo.png" alt="Sunny Tourism Logo" class="logo">
-    <span class="site-title">Sunny Tourism</span>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="terms.html">Terms</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Services & Pricing</h1>
-    <table>
-      <thead>
-        <tr><th>Service</th><th>Description</th><th>Price (USD)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>Itinerary Planning</td><td>Custom routes, hotel booking, visa assistance</td><td>$50 / session</td></tr>
-        <tr><td>Airport Pickup</td><td>Airport transfer with licensed driver and insurance</td><td>$30 / trip</td></tr>
-        <tr><td>City Tours</td><td>Guided city tours with entrance tickets</td><td>$80 / person</td></tr>
-        <tr><td>Private Guiding</td><td>Dedicated guide service for full day</td><td>$100 / day</td></tr>
-      </tbody>
-    </table>
-  </main>
-
-  <footer>
-    <nav>
-      <a href="index.html">Home</a>|
-      <a href="about.html">About Us</a>|
-      <a href="services.html">Services</a>|
-      <a href="terms.html">Terms</a>|
-      <a href="privacy.html">Privacy Policy</a>|
-      <a href="contact.html">Contact</a>
-    </nav>
-    <p>© 2025 Sunny Tourism. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <header>
+      <div class="logo-title">
+        <img src="logo.png" alt="Sunny Tourism Logo">
+        <h1>Our Services</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="team.html">Team</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <section class="services">
+      <div class="service">
+        <h3>Tourism Reception</h3>
+        <p>Customized itinerary & local reception service.</p>
+      </div>
+      <div class="service">
+        <h3>Cultural Experience</h3>
+        <p>Immersive exploration of Southeast Asia traditions.</p>
+      </div>
+      <div class="service">
+        <h3>Food Tours</h3>
+        <p>Taste authentic local cuisines.</p>
+      </div>
+    </section>
+    <footer>&copy; 2025 Sunny Tourism. All rights reserved.</footer>
+  </div>
 </body>
 </html>
