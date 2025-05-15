@@ -31,12 +31,27 @@
     </section>
 
     <section>
-      <form action="#" method="post">
-        <label>Name:<br><input type="text" name="name" required></label>
-        <label>Email:<br><input type="email" name="email" required></label>
-        <label>Message:<br><textarea name="message" rows="5" required></textarea></label>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <!-- Centered form wrapper -->
+      <div style="max-width:400px; margin:0 auto;">
+        <form action="#" method="post">
+          <label>Name:<br>
+            <input type="text" name="name" required 
+                   style="width:100%; padding:12px; font-size:1rem;" />
+          </label>
+          <br><br>
+          <label>Email:<br>
+            <input type="email" name="email" required 
+                   style="width:100%; padding:12px; font-size:1rem;" />
+          </label>
+          <br><br>
+          <label>Message:<br>
+            <textarea name="message" rows="6" required 
+                      style="width:100%; padding:12px; font-size:1rem;"></textarea>
+          </label>
+          <br><br>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
     </section>
 
     <footer>&copy; 2025 Sunny Tourism. All rights reserved.</footer>
